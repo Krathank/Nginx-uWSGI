@@ -2,10 +2,9 @@
 Flask Applications with uWSGI and Nginx on CentOS and Ubuntu
 
 # Centos 8.2
-#installation
-sudo yum install epel-release
-
-sudo yum install python-pip python-devel gcc nginx
+installation of required libraries 
+      sudo yum install epel-release
+      sudo yum install python-pip python-devel gcc nginx
 
 #Virtualenv
 sudo pip install virtualenv
