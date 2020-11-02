@@ -2,7 +2,7 @@
 Flask Applications with uWSGI and Nginx on CentOS and Ubuntu
 
 # Centos 8.2
-installation of required libraries 
+Installation of required libraries 
 
       sudo yum install epel-release      
       sudo yum install python-pip python-devel gcc nginx
@@ -19,10 +19,13 @@ Installing the required libraries inside the Virtualenv (Flask and uwsgi).
         
       pip install uwsgi flask
 
-vim ~/myproject/myproject.py
+create a sample python flask file as mentioned below
+              
+      vim ~/myproject/myproject.py
+             
               from flask import Flask
               application = Flask(__name__)
-
+              
               @application.route("/")
               def hello():
                   return "<h1 style='color:blue'>Hello There!</h1>"
