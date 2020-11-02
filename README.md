@@ -3,10 +3,8 @@ Flask Applications with uWSGI and Nginx on CentOS and Ubuntu
 
 # Centos 8.2
 installation of required libraries 
-              @application.route("/")
-              sudo yum install epel-release
-                  return "<h1 style='color:blue'>H
-      
+
+              sudo yum install epel-release      
       sudo yum install python-pip python-devel gcc nginx
 
 #Virtualenv
