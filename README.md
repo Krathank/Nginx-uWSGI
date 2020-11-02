@@ -1,7 +1,7 @@
 # Nginx-uWSGI
 Flask Applications with uWSGI and Nginx on CentOS and Ubuntu
 
-
+# Centos 8.2
 #installation
 sudo yum install epel-release
 
