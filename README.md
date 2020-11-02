@@ -9,13 +9,15 @@ installation of required libraries
       sudo pip install virtualenv
 
 Creating and activating Virtual environment
+
       mkdir ~/myproject
       cd ~/myproject
       virtualenv myprojectenv
       source myprojectenv/bin/activate
 
 Installing the required libraries inside the Virtualenv (Flask and uwsgi).
-pip install uwsgi flask
+        
+      pip install uwsgi flask
 
 vim ~/myproject/myproject.py
               from flask import Flask
