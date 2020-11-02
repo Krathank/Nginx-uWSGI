@@ -19,7 +19,7 @@ Installing the required libraries inside the Virtualenv (Flask and uwsgi).
         
       pip install uwsgi flask
 
-create a sample python flask file as mentioned below
+Create a sample python flask file as mentioned below
               
       vim ~/myproject/myproject.py
              
@@ -32,13 +32,23 @@ create a sample python flask file as mentioned below
 
               if __name__ == "__main__":
                   application.run(host='0.0.0.0')
-vim ~/myproject/wsgi.py
+
+Create a wsgi endpoint for our project
+
+      vim ~/myproject/wsgi.py
+      
               from myproject import application
 
               if __name__ == "__main__":
                   application.run()
+                  
+Check uWSGI using the below command
+
 uwsgi --socket 0.0.0.0:8000 --protocol=http -w wsgi
+Deactivate the virtual environment and the remaining setting needs to performed on VM level
+
 deactivate
+
 vim ~/myproject/myproject.ini
 sudo systemctl start myproject
 sudo systemctl enable myproject
